@@ -43,25 +43,25 @@ describe('Calculator basic operations', () => {
     expect(calculate(2.5, 0.5, '/')).toBe(5);
   });
 
-describe('Calculator extended operations', () => {
-  test('modulo', () => {
-    expect(modulo(5, 2)).toBe(1);
-  });
+test('modulo', () => {
+  expect(modulo(5, 2)).toBe(1);
+});
 
+test('power', () => {
+  expect(power(2, 3)).toBe(8);
+});
+
+test('squareroot', () => {
+  expect(squareRoot(16)).toBe(4);
+});
+
+describe('Calculator extended operations', () => {
   test('modulo by zero throws error', () => {
     expect(() => modulo(5, 0)).toThrow('Division by zero');
   });
 
-  test('power', () => {
-    expect(power(2, 3)).toBe(8);
-  });
-
   test('power with negative exponent', () => {
     expect(power(2, -2)).toBe(0.25);
-  });
-
-  test('squareroot', () => {
-    expect(squareRoot(16)).toBe(4);
   });
 
   test('square root with 0 to equal 0', () => {
