@@ -61,4 +61,18 @@ if (require.main === module) {
   prompt();
 }
 
-module.exports = { calculate };
+function modulo(a, b) {
+  if (b === 0) throw new Error('Division by zero');
+  return a % b;
+}
+
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
+function squareRoot(n) {
+  if (n < 0) throw new Error('Cannot take square root of negative number');
+  return Math.sqrt(n);
+}
+
+module.exports = { calculate, modulo, power, squareRoot };
