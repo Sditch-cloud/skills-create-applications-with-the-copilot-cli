@@ -44,7 +44,7 @@ describe('Calculator basic operations', () => {
   });
 
 describe('Calculator extended operations', () => {
-  test('modulo with 5 % 2 to equal 1', () => {
+  test('modulo', () => {
     expect(modulo(5, 2)).toBe(1);
   });
 
@@ -52,7 +52,7 @@ describe('Calculator extended operations', () => {
     expect(() => modulo(5, 0)).toThrow('Division by zero');
   });
 
-  test('power with 2 ^ 3 to equal 8', () => {
+  test('power', () => {
     expect(power(2, 3)).toBe(8);
   });
 
@@ -60,7 +60,7 @@ describe('Calculator extended operations', () => {
     expect(power(2, -2)).toBe(0.25);
   });
 
-  test('square root with √16 to equal 4', () => {
+  test('squareroot', () => {
     expect(squareRoot(16)).toBe(4);
   });
 
