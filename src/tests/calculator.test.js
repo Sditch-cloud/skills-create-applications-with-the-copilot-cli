@@ -37,7 +37,11 @@ describe('Calculator basic operations', () => {
   });
 
   test('handles decimals', () => {
-});
+    expect(calculate(2.5, 0.5, '+')).toBe(3);
+    expect(calculate(2.5, 0.5, '-')).toBe(2);
+    expect(calculate(2.5, 0.5, '*')).toBe(1.25);
+    expect(calculate(2.5, 0.5, '/')).toBe(5);
+  });
 
 describe('Calculator extended operations', () => {
   test('modulo with 5 % 2 to equal 1', () => {
